@@ -6,7 +6,7 @@ const Register = () => {
   return (
     <div className="register-page">
       <div className="register-form">
-        <h2>Chào mừng bạn đến với TopCV</h2>
+        <h2>Chào mừng bạn đến với WorkHub</h2>
         <p>Cùng xây dựng một hồ sơ nổi bật và nhận được các cơ hội sự nghiệp lý tưởng</p>
         <InputField type="text" placeholder="Nhập họ tên" icon="👤" />
         <InputField type="email" placeholder="Nhập email" icon="📧" />

@@ -1,3 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #4300FF; /* Màu tím */
+  --color-secondary: #0065F8; /* Màu xanh đậm */
+  --color-accent: #00CAFF; /* Màu xanh nhạt */
+  --color-highlight: #00FFDE; /* Màu xanh lá nhạt */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +16,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-highlight); /* Áp dụng màu nền */
 }
 
 code {

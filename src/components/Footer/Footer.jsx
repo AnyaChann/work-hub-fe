@@ -6,21 +6,21 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-logo">
-          <h2>TopCV</h2>
+          <h2>WorkHub</h2>
           <p>Tiếp lợi thế - Nối thành công</p>
           <p>Google for Startups Accelerator 2020</p>
         </div>
         <div className="footer-contact">
           <h3>Liên hệ</h3>
           <p>Hotline: (024) 6680 5588 (Giờ hành chính)</p>
-          <p>Email: hotro@topcv.vn</p>
+          <p>Email: hotro@WorkHub.vn</p>
           <div className="footer-apps">
             <img src="appstore.png" alt="App Store" />
             <img src="googleplay.png" alt="Google Play" />
           </div>
         </div>
         <div className="footer-links">
-          <h3>Về TopCV</h3>
+          <h3>Về WorkHub</h3>
           <ul>
             <li>Giới thiệu</li>
             <li>Góc báo chí</li>
@@ -29,7 +29,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-social">
-          <h3>Cộng đồng TopCV</h3>
+          <h3>Cộng đồng WorkHub</h3>
           <div className="social-icons">
             <span>Facebook</span>
             <span>LinkedIn</span>
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2014-2025 TopCV Vietnam JSC. All rights reserved.</p>
+        <p>© 2014-2025 WorkHub Vietnam JSC. All rights reserved.</p>
       </div>
     </footer>
   );
