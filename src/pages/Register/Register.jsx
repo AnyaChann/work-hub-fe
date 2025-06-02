@@ -45,7 +45,7 @@ const Register = () => {
       <div className="register-container">
         <div className="register-form">
           <div className="form-content">
-            <h2>Chào mừng bạn đến với TopCV</h2>
+            <h2>Chào mừng bạn đến với WorkHub</h2>
             <p>Cùng xây dựng một hồ sơ nổi bật và nhận được các cơ hội sự nghiệp lý tưởng</p>
             
             {error && <p className="error-message">{error}</p>}
@@ -105,7 +105,7 @@ const Register = () => {
                 <label htmlFor="terms">
                   Tôi đã đọc và đồng ý với{' '}
                   <a href="#" className="terms-link">Điều khoản dịch vụ</a> và{' '}
-                  <a href="#" className="terms-link">Chính sách bảo mật</a> của TopCV
+                  <a href="#" className="terms-link">Chính sách bảo mật</a> của WorkHub
                 </label>
               </div>
 
@@ -142,19 +142,19 @@ const Register = () => {
           
           {/* Thanh copyright */}
           <div className="copyright">
-            <p>© 2016. All Rights Reserved. TopCV Vietnam JSC.</p>
+            <p>© 2025. All Rights Reserved. WorkHub Vietnam JSC.</p>
           </div>
         </div>
 
         <div className="register-sidebar">
-          <div className="topcv-logo">
-            <img src="/logo-topcv.png" alt="TopCV" />
+          <div className="WorkHub-logo">
+            <img src="/logo-WorkHub.png" alt="WorkHub" />
           </div>
           <h3>Tiếp lợi thế<br />Nối thành công</h3>
-          <p>TopCV - Hệ sinh thái nhân sự tiên phong ứng dụng công nghệ tại Việt Nam</p>
+          <p>WorkHub - Hệ sinh thái nhân sự tiên phong ứng dụng công nghệ tại Việt Nam</p>
           <div className="qr-code">
             <img src="/qr-code.png" alt="QR Code" />
-            <p>topcv.com.vn</p>
+            <p>WorkHub.com.vn</p>
           </div>
         </div>
       </div>

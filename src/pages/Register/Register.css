@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 0;
+  overflow: hidden;
 }
 
 .register-container {
@@ -12,6 +13,7 @@
   width: 100vw;
   height: 100vh;
   background: #ffffff;
+  overflow: hidden;
 }
 
 .register-form {
@@ -20,14 +22,36 @@
   flex-direction: column;
   max-width: 70%;
   position: relative;
+  overflow: hidden;
 }
 
 .form-content {
   flex: 1;
   padding: 40px 120px;
+  margin: 0 auto;
   flex-direction: column;
   justify-content: center;
-  overflow-y: auto;
+  overflow-y: auto; /* Cho phép scroll nếu cần */
+  /* Ẩn scroll bar nhưng vẫn cho phép scroll */
+  -ms-overflow-style: none; /* IE và Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.form-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ẩn scroll bar cho body và html */
+html, body {
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE và Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .register-form h2 {
@@ -234,12 +258,12 @@
   border-radius: 50%;
 }
 
-.topcv-logo {
+.horkhub-logo {
   z-index: 1;
   position: relative;
 }
 
-.topcv-logo img {
+.horkhub-logo img {
   max-width: 150px;
   margin-bottom: 20px;
 }

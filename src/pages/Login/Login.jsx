@@ -29,37 +29,89 @@ const Login = () => {
 
   return (
     <div className="login-page">
-      <div className="login-form">
-        <h2>Chào mừng bạn đã quay trở lại</h2>
-        <p>Cùng xây dựng một hồ sơ nổi bật và nhận được các cơ hội sự nghiệp lý tưởng</p>
-        {error && <p className="error">{error}</p>}
-        <form onSubmit={handleSubmit}>
-          <InputField
-            type="email"
-            placeholder="Email"
-            icon="📧"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <InputField
-            type="password"
-            placeholder="Mật khẩu"
-            icon="🔒"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button type="submit" className="btn btn-primary" disabled={loading}>
-            {loading ? 'Đang đăng nhập...' : 'Đăng nhập'}
-          </button>
-        </form>
-        <a href="#" className="forgot-password">Quên mật khẩu</a>
-        <div className="social-login">
-          <p>Hoặc đăng nhập bằng</p>
-          <button className="btn btn-google">Google</button>
-          <button className="btn btn-facebook">Facebook</button>
-          <button className="btn btn-linkedin">LinkedIn</button>
+      <div className="login-container">
+        <div className="login-form">
+          <div className="form-content">
+            <h2>Chào mừng bạn đã quay trở lại</h2>
+            <p>Cùng xây dựng một hồ sơ nổi bật và nhận được các cơ hội sự nghiệp lý tưởng</p>
+            
+            {error && <p className="error-message">{error}</p>}
+            
+            <form onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label>Email</label>
+                <InputField
+                  type="email"
+                  placeholder="Email"
+                  icon="📧"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+
+              <div className="form-group">
+                <label>Password</label>
+                <InputField
+                  type="password"
+                  placeholder="Mật khẩu"
+                  icon="🔒"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+
+              <div className="forgot-password-link">
+                <a href="#" className="forgot-password">Quên mật khẩu</a>
+              </div>
+
+              <button type="submit" className="btn-login" disabled={loading}>
+                {loading ? 'Đang đăng nhập...' : 'Đăng nhập'}
+              </button>
+            </form>
+
+            <div className="social-login-divider">
+              <p>Hoặc đăng nhập bằng</p>
+            </div>
+
+            <div className="social-login-buttons">
+              <button className="btn-google">
+                <span className="google-icon">G</span> Google
+              </button>
+              <button className="btn-facebook">
+                <span className="facebook-icon">f</span> Facebook
+              </button>
+              <button className="btn-linkedin">
+                <span className="linkedin-icon">in</span> Linkedin
+              </button>
+            </div>
+
+            <div className="register-link">
+              <p>Bạn chưa có tài khoản? <a href="/register">Đăng ký ngay</a></p>
+            </div>
+
+            <div className="support-info">
+              <p>Bạn gặp khó khăn khi tạo tài khoản?</p>
+              <p>Vui lòng gọi tới số <strong>(024) 6680 5588</strong> (giờ hành chính).</p>
+            </div>
+          </div>
+          
+          {/* Thanh copyright */}
+          <div className="copyright">
+            <p>© 2025. All Rights Reserved. WorkHub Vietnam JSC.</p>
+          </div>
         </div>
-        <p>Bạn chưa có tài khoản? <a href="/register">Đăng ký ngay</a></p>
+
+        <div className="login-sidebar">
+          <div className="WorkHub-logo">
+            <img src="/logo-WorkHub.png" alt="WorkHub" />
+          </div>
+          <h3>Tiếp lợi thế<br />Nối thành công</h3>
+          <p>WorkHub - Hệ sinh thái nhân sự tiên phong ứng dụng công nghệ tại Việt Nam</p>
+          <div className="qr-code">
+            <img src="/qr-code.png" alt="QR Code" />
+            <p>WorkHub.com.vn</p>
+          </div>
+        </div>
       </div>
     </div>
   );
