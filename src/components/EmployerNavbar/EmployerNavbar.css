@@ -1,4 +1,4 @@
-.navbar {
+.employer-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,8 +11,8 @@
   z-index: 1001;
 }
 
-/* Logo */
-.navbar-logo a {
+/* Logo - giữ nguyên style từ navbar chính */
+.employer-navbar-logo a {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -47,8 +47,8 @@
   margin-top: 2px;
 }
 
-/* Menu */
-.navbar-menu {
+/* Menu - style giống navbar chính */
+.employer-navbar-menu {
   display: flex;
   list-style: none;
   gap: 30px;
@@ -57,11 +57,11 @@
   align-items: center;
 }
 
-.navbar-menu li {
+.employer-navbar-menu li {
   position: relative;
 }
 
-.navbar-menu li a {
+.employer-navbar-menu li a {
   text-decoration: none;
   color: #333;
   font-size: 1rem;
@@ -73,7 +73,7 @@
   transition: color 0.3s;
 }
 
-.navbar-menu li a:hover {
+.employer-navbar-menu li a:hover {
   color: #28a745;
 }
 
@@ -87,31 +87,58 @@
   transform: rotate(180deg);
 }
 
-/* WorkHub Pro */
-.WorkHub-pro a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.pro-badge {
-  background: linear-gradient(45deg, #ff6b35, #f7931e);
-  color: white;
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 2px 6px;
-  border-radius: 8px;
-  text-transform: uppercase;
-}
-
 /* Actions */
-.navbar-actions {
+.employer-navbar-actions {
   display: flex;
   gap: 12px;
   align-items: center;
 }
 
-.navbar-actions .btn {
+/* Language Selector */
+.language-selector {
+  position: relative;
+}
+
+.language-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: 1px solid #e9ecef;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.language-btn:hover {
+  border-color: #28a745;
+}
+
+.flag-icon {
+  width: 18px;
+  height: 13px;
+  border-radius: 2px;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #28a745;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+
+.contact-icon {
+  font-size: 1rem;
+}
+
+/* Buttons - style giống navbar chính */
+.employer-navbar-actions .btn {
   padding: 8px 16px;
   border-radius: 20px;
   text-decoration: none;
@@ -142,69 +169,7 @@
   background: #009643;
 }
 
-.btn-secondary {
-  background: #f2f4f5;
-  color: black;
-  border: 1px solid #f2f4f5;
-  padding: 8px 20px;
-}
-
-.btn-secondary:hover {
-  background: #dfdfdfc9;
-  border-color: #dfdfdfc9;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .navbar {
-    padding: 12px 20px;
-  }
-  
-  .navbar-menu {
-    gap: 20px;
-  }
-  
-  .logo-slogan {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
-    padding: 12px 15px;
-  }
-  
-  .navbar-menu {
-    display: none; /* Ẩn menu trên mobile, có thể thêm hamburger menu */
-  }
-  
-  .navbar-actions {
-    gap: 8px;
-  }
-  
-  .navbar-actions .btn {
-    padding: 6px 12px;
-    font-size: 0.8rem;
-  }
-  
-  .btn-secondary {
-    display: none; /* Ẩn nút này trên mobile */
-  }
-}
-
-@media (max-width: 480px) {
-  .logo-main {
-    font-size: 1.5rem;
-  }
-  
-  .navbar-actions .btn {
-    padding: 6px 10px;
-    font-size: 0.75rem;
-  }
-}
-
-/* Dropdown hover effects (tùy chọn) */
+/* Dropdown hover effects */
 .dropdown::after {
   content: '';
   position: absolute;
@@ -219,4 +184,66 @@
 
 .dropdown:hover::after {
   width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .employer-navbar {
+    padding: 12px 20px;
+  }
+  
+  .employer-navbar-menu {
+    gap: 20px;
+  }
+  
+  .logo-slogan {
+    display: none;
+  }
+  
+  .employer-navbar-actions {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .employer-navbar {
+    flex-wrap: wrap;
+    padding: 12px 15px;
+  }
+  
+  .employer-navbar-menu {
+    display: none; /* Ẩn menu trên mobile, có thể thêm hamburger menu */
+  }
+  
+  .contact-info .contact-text {
+    display: none;
+  }
+  
+  .language-selector {
+    display: none;
+  }
+  
+  .employer-navbar-actions {
+    gap: 8px;
+  }
+  
+  .employer-navbar-actions .btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-main {
+    font-size: 1.5rem;
+  }
+  
+  .employer-navbar-actions .btn {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+  
+  .contact-info {
+    margin-right: 4px;
+  }
 }

@@ -1,0 +1,491 @@
+.employer-login-page {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.employer-login-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+}
+
+/* Left Side - Login Form */
+.employer-login-form {
+  flex: 1;
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 40px 60px; */
+  background: #ffffff;
+}
+
+.form-header {
+  margin-bottom: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #28a745;
+}
+
+.form-content {
+  flex: 1;
+  max-width: 800px;
+}
+
+.form-content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #28a745;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.form-content p {
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Google Login Button */
+.google-login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  transition: background 0.3s;
+}
+
+.google-login-btn:hover {
+  background: #357ae8;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+  background: white;
+  color: #4285f4;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper .input-icon {
+  position: absolute;
+  left: 12px;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-wrapper input:focus {
+  outline: none;
+  border-color: #28a745;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.forgot-link {
+  color: #28a745;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 25px;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: #218838;
+}
+
+.login-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.register-link {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-link p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.copyright {
+  margin-top: auto;
+  text-align: center;
+  color: #999;
+  font-size: 0.85rem;
+}
+
+/* Right Side - Illustration */
+.employer-login-illustration {
+  flex: 1;
+  background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 30%;
+}
+
+.illustration-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 60px 40px;
+  position: relative;
+}
+
+/* Chart Container */
+.chart-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 40px;
+}
+.chart-container .main-chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.chart-grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(to right, rgba(255,255,255,0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.chart-bars {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 10px;
+}
+
+.bar {
+  width: 15px;
+  background: #28a745;
+  border-radius: 2px 2px 0 0;
+  animation: growUp 1.5s ease-out forwards;
+}
+
+.bar-1 { height: 40%; animation-delay: 0.2s; }
+.bar-2 { height: 60%; animation-delay: 0.4s; }
+.bar-3 { height: 80%; animation-delay: 0.6s; background: #00ff88; }
+.bar-4 { height: 50%; animation-delay: 0.8s; }
+
+@keyframes growUp {
+  from { height: 0; }
+  to { height: var(--final-height); }
+}
+
+.trend-line {
+  position: absolute;
+  top: 20%;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 2px;
+  background: linear-gradient(45deg, #00ff88, #28a745);
+  border-radius: 1px;
+  transform: rotate(15deg);
+}
+
+/* Pie Chart */
+.pie-chart {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #28a745 0deg 120deg,
+    #00ff88 120deg 240deg,
+    #4dabf7 240deg 360deg
+  );
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 3D Elements */
+.cube-1, .cube-2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(45deg, #28a745, #00ff88);
+  border-radius: 4px;
+  transform: rotateX(45deg) rotateY(45deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.chart-container .cube-1 {
+  top: 30px;
+  right: 80px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.chart-container .cube-2 {
+  bottom: 100px;
+  left: 20px;
+  animation: float 3s ease-in-out infinite reverse;
+}
+
+.cylinder {
+  position: absolute;
+  bottom: 50px;
+  right: 40px;
+  width: 25px;
+  height: 40px;
+  background: linear-gradient(to bottom, #4dabf7, #339af0);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotateX(45deg) rotateY(45deg); }
+  50% { transform: translateY(-10px) rotateX(45deg) rotateY(45deg); }
+}
+
+/* Stars */
+.star {
+  position: absolute;
+  font-size: 1.2rem;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.star-1 {
+  top: 15%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.star-2 {
+  top: 60%;
+  right: 15%;
+  animation-delay: 1s;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Text Content */
+.text-content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.text-content h2 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #00ff88;
+}
+
+.pagination-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #00ff88;
+}
+
+/* Bottom Logo */
+.bottom-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.bottom-logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.bottom-logo-text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.slogan {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .employer-login-form {
+    /* padding: 30px 40px; */
+  }
+  
+  .chart-container {
+    width: 250px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .employer-login-container {
+    flex-direction: column;
+  }
+  
+  .employer-login-form {
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  .employer-login-illustration {
+    display: none;
+  }
+}
