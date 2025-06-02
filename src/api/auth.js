@@ -31,3 +31,13 @@ export const logout = async () => {
     throw new Error(error.response?.data || 'Đăng xuất thất bại');
   }
 };
+
+// API đăng ký người dùng mới
+export const register = async (userData) => {
+  try {
+    const response = await axiosClient.post('/register', userData);
+    return response;
+  } catch (error) {
+    throw new Error(error.response?.data?.message || 'Đăng ký thất bại');
+  }
+};
