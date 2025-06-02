@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className="footer-contact">
           <h3>Liên hệ</h3>
-          <p>Hotline: (024) 6680 5588 (Giờ hành chính)</p>
+          <p>Hotline: (084) 1234 5678 (Giờ hành chính)</p>
           <p>Email: hotro@WorkHub.vn</p>
           <div className="footer-apps">
             <img src="appstore.png" alt="App Store" />

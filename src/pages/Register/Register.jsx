@@ -136,7 +136,7 @@ const Register = () => {
 
             <div className="support-info">
               <p>Bạn gặp khó khăn khi tạo tài khoản?</p>
-              <p>Vui lòng gọi tới số <strong>(024) 6680 5588</strong> (giờ hành chính).</p>
+              <p>Vui lòng gọi tới số <strong>(084) 1234 5678</strong> (giờ hành chính).</p>
             </div>
           </div>
           
